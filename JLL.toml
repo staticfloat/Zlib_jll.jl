@@ -16,14 +16,14 @@ platform = "aarch64-linux-gnu"
     treehash = "sha1:62bb012162f7f8dc399f865fc0ec57c8a6a5f79a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:25f0eafaf3a4011c63dde3818c3c9544dbcc1951c3bd8df96dddef64e65f2e0a"
+        tarball_hash = "sha256:8da47084960f620f45037a0c3cfabb43ee658bf629009ddabf08afea486123f6"
         url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-build_log-v1.0.0-aarch64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
     treehash = "sha1:73ab90d01bf7b5b7983a851d0bd31be6394da5dd"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:d62b94b841907801ad2569a54340a8c2e25896425a91bb5d2941eef7b049cdd6"
+        tarball_hash = "sha256:16de5ba0d4214467e2d5b9e794c694002723a1e71c805702860deec1c48123e1"
         url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-extract_log-v1.0.0-aarch64-linux-gnu.tar.gz"
 
     [[builds.products]]
@@ -42,5 +42,5 @@ platform = "aarch64-linux-gnu"
     treehash = "sha1:d8e3f1e039b7829a8e21922cc4e2ee5e4d5d59f5"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:5752cb95c2cc12e787a57c46b9571963d0f968511341ea87bd1c38820d8a786d"
+        tarball_hash = "sha256:92ff6b714531d88c25f9be220e1cc5e2fab9c851f04229b0cc1ca0f2d91a3f83"
         url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-v1.0.0-aarch64-linux-gnu.tar.gz"
