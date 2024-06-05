@@ -5,7 +5,7 @@ libc = "glibc"
 os = "linux"
 
     [[default.download]]
-    sha256 = "92ff6b714531d88c25f9be220e1cc5e2fab9c851f04229b0cc1ca0f2d91a3f83"
+    sha256 = "f8df4c4126f7e0ad5dc64083a201d3977379b229b6ba456896e6227880f3156e"
     url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-v1.0.0-aarch64-linux-gnu.tar.gz"
 
 [[default-build_log]]
@@ -16,7 +16,7 @@ libc = "glibc"
 os = "linux"
 
     [[default-build_log.download]]
-    sha256 = "8da47084960f620f45037a0c3cfabb43ee658bf629009ddabf08afea486123f6"
+    sha256 = "e6c303034c2e598b7c142ba2dffaf2fc4ae399273c8ee2228aeb495e2e5cb3eb"
     url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-build_log-v1.0.0-aarch64-linux-gnu.tar.gz"
 
 [[default-extract_log]]
@@ -27,5 +27,5 @@ libc = "glibc"
 os = "linux"
 
     [[default-extract_log.download]]
-    sha256 = "16de5ba0d4214467e2d5b9e794c694002723a1e71c805702860deec1c48123e1"
+    sha256 = "8d72a4a263853bcdf8b2b2d8ca92ab85b835bbee1d0e865ad2b446e1a75dae7c"
     url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-extract_log-v1.0.0-aarch64-linux-gnu.tar.gz"
