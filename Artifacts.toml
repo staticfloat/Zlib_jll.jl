@@ -1,31 +1,31 @@
-[[default]]
-arch = "aarch64"
-git-tree-sha1 = "d8e3f1e039b7829a8e21922cc4e2ee5e4d5d59f5"
+[[Zlib]]
+arch = "x86_64"
+git-tree-sha1 = "0cfb0a3d5ac3ebbe834bab0060f3f0831abbd379"
 libc = "glibc"
 os = "linux"
 
-    [[default.download]]
-    sha256 = "f8df4c4126f7e0ad5dc64083a201d3977379b229b6ba456896e6227880f3156e"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib.download]]
+    sha256 = "728eb68d2a8a6dc2251050669fd499ffec69056566cbac8132d6d3ffe341a986"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.0.11-GCCBoostrap/Zlib-v1.0.11-x86_64-linux-gnu.tar.gz"
 
-[[default-build_log]]
-arch = "aarch64"
-git-tree-sha1 = "62bb012162f7f8dc399f865fc0ec57c8a6a5f79a"
+[[Zlib-build_log]]
+arch = "x86_64"
+git-tree-sha1 = "3b5647edc1f8fe4329f1f5750e83c547376b2070"
 lazy = true
 libc = "glibc"
 os = "linux"
 
-    [[default-build_log.download]]
-    sha256 = "e6c303034c2e598b7c142ba2dffaf2fc4ae399273c8ee2228aeb495e2e5cb3eb"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-build_log-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib-build_log.download]]
+    sha256 = "ebbed224948f91faf30884944bb98e64884cbcf7f151a9d9101f82d43ab8f746"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.0.11-GCCBoostrap/Zlib-build_log-v1.0.11-x86_64-linux-gnu.tar.gz"
 
-[[default-extract_log]]
-arch = "aarch64"
-git-tree-sha1 = "73ab90d01bf7b5b7983a851d0bd31be6394da5dd"
+[[Zlib-extract_log]]
+arch = "x86_64"
+git-tree-sha1 = "c17bd6b8ea8786abb8135ec6026ffd0d0e48654b"
 lazy = true
 libc = "glibc"
 os = "linux"
 
-    [[default-extract_log.download]]
-    sha256 = "8d72a4a263853bcdf8b2b2d8ca92ab85b835bbee1d0e865ad2b446e1a75dae7c"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-extract_log-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib-extract_log.download]]
+    sha256 = "d367c816f3fb8fe0575613933a503b159f640a4034ee602013a9c80e97baef38"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.0.11-GCCBoostrap/Zlib-extract_log-v1.0.11-x86_64-linux-gnu.tar.gz"
