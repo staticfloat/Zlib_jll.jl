@@ -12,7 +12,7 @@ The binaries for `Zlib` have been built from upstream sources version v1.3.1:
 
 `Zlib` is available for the following platforms:
 
- - `Linux aarch64 {libc=glibc}`
+ - `Linux x86_64 {libc=glibc}`
 # Dependencies
 The following JLL packages are required by `Zlib`:
 
