@@ -1,31 +1,31 @@
-[[default]]
+[[Zlib]]
 arch = "aarch64"
 git-tree-sha1 = "d8e3f1e039b7829a8e21922cc4e2ee5e4d5d59f5"
 libc = "glibc"
 os = "linux"
 
-    [[default.download]]
-    sha256 = "f8df4c4126f7e0ad5dc64083a201d3977379b229b6ba456896e6227880f3156e"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib.download]]
+    sha256 = "8200c36d3dea0fbfda8453d497d2642cff5d3713ff4f3560f780b7da16a3de87"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBoostrap-aarch64-linux-gnu/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
 
-[[default-build_log]]
+[[Zlib-build_log]]
 arch = "aarch64"
-git-tree-sha1 = "62bb012162f7f8dc399f865fc0ec57c8a6a5f79a"
+git-tree-sha1 = "4c7e0c510f3bc918584ec8ee4141fc3c60b8b1f4"
 lazy = true
 libc = "glibc"
 os = "linux"
 
-    [[default-build_log.download]]
-    sha256 = "e6c303034c2e598b7c142ba2dffaf2fc4ae399273c8ee2228aeb495e2e5cb3eb"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-build_log-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib-build_log.download]]
+    sha256 = "5bef0e931e0f4f9bea0aef97b07c889f744389de4677698253abe2b58386d021"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBoostrap-aarch64-linux-gnu/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
 
-[[default-extract_log]]
+[[Zlib-extract_log]]
 arch = "aarch64"
-git-tree-sha1 = "73ab90d01bf7b5b7983a851d0bd31be6394da5dd"
+git-tree-sha1 = "be55cbea05aba1f8a2bdd1818fa0fa942e714ae2"
 lazy = true
 libc = "glibc"
 os = "linux"
 
-    [[default-extract_log.download]]
-    sha256 = "8d72a4a263853bcdf8b2b2d8ca92ab85b835bbee1d0e865ad2b446e1a75dae7c"
-    url = "https://github.com/staticfloat/releases/download/v1.0.0/Zlib-extract_log-v1.0.0-aarch64-linux-gnu.tar.gz"
+    [[Zlib-extract_log.download]]
+    sha256 = "8aebece0020877833547127753af2b68a004039e21419956349dc2304d67889d"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBoostrap-aarch64-linux-gnu/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
