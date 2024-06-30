@@ -17,6 +17,8 @@ The binaries for `Zlib` have been built from upstream sources version v1.3.1:
  - `Linux aarch64 {libc=glibc}`
  - `Linux armv7l {call_abi=eabihf, libc=glibc}`
  - `Linux powerpc64le {libc=glibc}`
+ - `Windows x86_64`
+ - `Windows i686`
 # Dependencies
 The following JLL packages are required by `Zlib`:
 
