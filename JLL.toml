@@ -4,27 +4,32 @@ julia_compat = "1.6"
 platform_augmentation_code = ""
 
 [[builds]]
-deps = []
 name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
 platform = "x86_64-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:3823292163406f3e9787068ee92af58611a960a0"
+    treehash = "sha1:2b4d1323c0702824aefd55bfbb970908793259b2"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:e8f107895e60cc14453581c54e5a9c8dd4a3307a5d0d35e7815f006a3ca510a8"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:46377376df09cf15ec7dce1848b8df519626ad5d14d3499ea2ec67edbe42b139"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:91b70dc7c29938c060f1f3c99f589fb21574fcce"
+    treehash = "sha1:2d36ffd36abc511142f43a3fab97ea4d8e573b10"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:41b5b8f4fb5144bf779872284274a1a51f8ebc1e4be847bf3856ddd55202572d"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:15e817c749ae1c178f804426b61b76a29a5b33a008c0d21c6357bda7c99166e8"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -39,33 +44,38 @@ platform = "x86_64-linux-gnu"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:d19cb8142dd4f6fdd19f2502e9f069f9803f4111"
+    treehash = "sha1:881524c8f7463c67455e3b21814d751b8dda7697"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:7721526e6bfe78dedc6e2e648500931ac2eb2099bf241580bf7f9a7920ccec1f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:81498d5c4e4f2f8088e82a912a12d6956673abaa9c5f55307ae799a1fad1c807"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
 [[builds]]
-deps = []
 name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
 platform = "i686-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:19dfed136c33ed794a70e7ad4bd55dfe5002c1ae"
+    treehash = "sha1:74b94334c2f5c74994737340482544a7c2ffdb3a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:fad61ceb7bd7ab176dfb880ce424ec533d57987aeaa496b97baba7ed5e929e88"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:39bbe9dcac55eaed1043f1392d2239cfdf8dd2d4f20a1eee69c58a5bce3a2e1e"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:e9eacd0d573ec5fbd0f36298f1cf721406b4732c"
+    treehash = "sha1:3389487593098e59cb7a62e12918811ba7805c37"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:46c70ba56ef8ae9320a549d449a8f76c554e2d70fa519c68f34e210670e19fe0"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:2a70089d11fe41c6e62231733e3f8df717507a312ff2ddc21e9b7248ecf288b3"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -80,33 +90,38 @@ platform = "i686-linux-gnu"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:c070944c8e4da68ba9cf6abc61504f2017ba5e89"
+    treehash = "sha1:abd852db730475f0c512cea30ec89c0e3396feb7"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:1f666ede818f51389a2cf27adafb72593d73ad1504c565d59b91a9c4e8ea411c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:856ff1ea98883fb95b23c7b06ea86c046d72f0a1627cdfaaa53f715278300d39"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
 [[builds]]
-deps = []
 name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
 platform = "aarch64-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:045d819493b65dc060ee84a815b3f8e33dd4979a"
+    treehash = "sha1:707cdee1c85cc2b460d4952918536a712944daf8"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:aefb885369eb2f6b49ffc775d33398e48ffb1f1366bbaf87168b9760bc4a63f9"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:1633fb4ff07392e2432f4ce48e815a1da7a2c1cabd84993f7974d0e793162717"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:69434f2121929a9bfde980b222f693257e38bbf3"
+    treehash = "sha1:0e2dbc0c29ef752959c31cb68901f748bbb5083f"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:2211a979d5007fe2e33cd66b866954d48f04be6694b6417111f02954b59ed4ef"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:46cdf1f3735c954a4e56c0e7a39aaa2d140a4b319cd7e67239196e47f5b1a00d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -121,33 +136,84 @@ platform = "aarch64-linux-gnu"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:967cdc3afa7ef320058e2aec6dc845f05ad284d5"
+    treehash = "sha1:33c62a44bb26ee2ab69eb21f83d106e2f360d5d9"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:7270c5b96f1c395b94a3c5cbdc56bfaff112e30e6f1a1114e8739ad8cd5bfd0f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:7ed0f7b7300bca7540e56b954dda4db436e060b17e8f3a0716e4945979e5d04e"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
 [[builds]]
-deps = []
 name = "Zlib"
+platform = "armv6l-linux-gnueabihf"
+deps = []
 lazy = "false"
 src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:c026bd382c813a02f8f621ba690fbb87319a55bf"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:1c655d9038afc705f0e27cd35083e120064a214fcf6d01ebf72335c02ddd4f55"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:10675fff260dbc2de898039c7a13fa217a92e6a3"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:96e4f09913ea5fce84d04cf9fc87472c267eed2b788bc358b87d5ce85a531536"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:5196a2d7c2e0d73068c08d1964053f5a5ba634e5"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:c18b551896ae2d80072431b1148a0f6e5f388316405b67ee0de80fa913cf5fd8"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+[[builds]]
+name = "Zlib"
 platform = "armv7l-linux-gnueabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:92582ced3cf4cdc5608faa39e9db6cc046cdcb64"
+    treehash = "sha1:8e2c3442a60a9c50858864777f0d870d354e7902"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:da405bbc31ecef0d417155d48d7ad4d6cf1c09b7e8cd719b5291a87b89bf8fb8"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:516f9a09e14795bba6ce29527c3d3b266e53ead3c0d29a5576446ab1d5831920"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:794d30bfd56ed50621f46672762caefbd96668a7"
+    treehash = "sha1:1a14da9581580e9d72945432ea54c3310fba9db3"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:63b37d6d1f829e5a788c40dfc6a2e4cd7435e79036c42b14ef64b9ab458f97e5"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:84b0aed5b1afea2ddf9456bfdd2fad9445ad3effde22f739a63fedee533e5852"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -162,33 +228,38 @@ platform = "armv7l-linux-gnueabihf"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:6f39f7897ab5e4b2418a17933f549b24aa1dc3ac"
+    treehash = "sha1:1cc1d7d3af102fbb9e07f1353d5009e0e0d30f45"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:a3fb6172e78b2c8ccb01d9557a1a197e3428f1307964e1dcff6475636b8fe432"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:bf456e878b40673db99294afa6dd78853020c68cc26912ccaf82df96d04ccf11"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
 [[builds]]
-deps = []
 name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
 platform = "powerpc64le-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:1521ea70b1d0899b8ffac60839f4e635f80990b4"
+    treehash = "sha1:e5a62807f9aa95af5e5007745093da3c3b0e420a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:5797eb7752865e74d0e03dcce4ffd044b178e62c46472d7409c0c5f06e291653"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:8ba51a01488caffe57f32af103075496fac2b30179ae413c30a05716b8617b81"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:c2df5b46e74015928ae3a3dd679dac6a2eba71d6"
+    treehash = "sha1:b71c3d29f621a961ea44b22e6bbcedb7756f1908"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:03276962b84854eec74309df62109de07d97019df633be78924bd8811f04a54b"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:f6612d357e6f9ba421b18188f43a78db6bf167a519d47d7baa4d0727e3f84000"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -203,74 +274,268 @@ platform = "powerpc64le-linux-gnu"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:2cde00faf0803d985c91cbb8f9396d08a3e42f54"
+    treehash = "sha1:83bf31fa70ded0df7ae275c8dc2d69eee8d033f9"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:a8c5109fe229ea8adac2ce9b621ad311ee67bca8134aa3eb208bb167a9a27b39"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:af6fb29d3260792c33f028a874d71f5e123f6ab3c8e6b60922179f233f7d9a75"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
 [[builds]]
-deps = []
 name = "Zlib"
+platform = "x86_64-linux-musl"
+deps = []
 lazy = "false"
 src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:869944b3d9080f89c2ca017a333a66faa309259c"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:c2cb960c2848c6449a7dae4f413b7c365efa377791d342670feec62ddf9990f9"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-x86_64-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:443afd6f9b6179160601fea46ef87fb22536cb53"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:f33193a2514efeec9e55332d7d79e7c4e7c9ccd682aeed66dc32cd83503d9f89"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-x86_64-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:39ed9d1f2db542d64822d6da01a484c6bcb9f53b"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:052647d3b9d8a32ac9f8e5b947bcb87731d31d85c18a190323b1fc8adfebbdc4"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-x86_64-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "i686-linux-musl"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:ea7ad5ae75df5f27309bad4f2e2d8185b8b2e6bc"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:d3e7231627f8acc38f351ff2e47bfe2ce2e80fd96651fb8e0e817228d24fc0b8"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-i686-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:f55cf6d2e25e46593546847b97023161dd8d1b3d"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:a61108a77518fc73aa27fee216914c439180195e508437687d7a5401fd4c8324"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-i686-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:77fee933e35ccbc57f1db06d9a106659450332d6"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:0bb16e427fe0b14822e930ef1336cd8dd6c69ba63991deb13604088f3383a243"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-i686-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "aarch64-linux-musl"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:8cf197efd6ca60e32b04b3511c4836849fd1c174"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:e723db690a2cc866aeec3924625851634458ba151987333da722af57ab03ef07"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-aarch64-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:5b4e5699055ff4c66fa41ad186027cd37f927216"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:d930bac8c09a131e26665216d333f37379c34391720f04e1cb71cd28255eb455"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-aarch64-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:30d112ef518a7bf5e26d83c6d295bd5c7cb07c3e"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:a568fa10dcbf94a74be35d18425531753bb0887f0049c7970f82fb82dac7a3bd"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-aarch64-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv6l-linux-musleabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:89dcf2dce860675e316e673b2d0cd76e19e1e28c"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:035b6d61d0a782a5f5ce39933fa64b107ed666258e207953d372ff4771fe428a"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:882193796afda54a1141c29161077bd67b214e7e"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:6025384f4b287b47e67bdd97a85c4b6d530576ea14b07cc32343d829e51b0686"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:279f462d8c8942514070b198fca4a6e0326de572"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:42c073279e12dbc5a5db7d44d61a6bd8361ffaa90d436fad1b1cd02743c82be1"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv7l-linux-musleabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:34b81e1d2477819f021e71dd466af69665ec07a3"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:800f1c351c34125c12b25f2d55cdb975bdeae1a31a1957ca2e4caa6225993216"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:e3bbba4e0f7db55319ee4e0eeb867645b633be22"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:abba7a8f4cb3abf2f573a038bd9d3fe410fb9306090aac9c0fd4f7da558dc904"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:fdf24fbd48e4e106821ab14981e7720920b3c342"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:9f369a5ff292d9ca6b2b620b4906314fe6a92e7537e3723728fae6634ddd2043"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+[[builds]]
+name = "Zlib"
 platform = "x86_64-w64-mingw32"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:47bcf4f8cf0b65a36d10cf1b256cd5e194dd03ae"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:552570b90c926b2441c440465c0abfafe8a0d243517520a11ca23db09758e906"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:a6c69c04d5501bf6926efc2cfc78d414bd63e5f7"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:426ff8947323130b5d08ae69401a51845bd54837eb8c652253e77d5b4357b1b2"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz-1.2.11.dll"
-    type = "library"
-    path = "bin/libz-1.2.11.dll"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:7ac9216a5e11bc7db37243a4cbccbfe7d8acfe37"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:4cca7fcd6c9d9a7fda12b2a5ec5064b42e036e1075a35688863001f6d1cd06eb"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
-[[builds]]
 deps = []
-name = "Zlib"
 lazy = "false"
 src_version = "1.3.1"
-platform = "i686-w64-mingw32"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:59fa5c248530ca3401f83529454eab7f56cbd54d"
+    treehash = "sha1:703f857eb025a27744e019f676e8fc15f8985d3d"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:0d2a2a95e129e3b4defee59f3c8128b005ee713ac2c4c2f97d11455f72a753ff"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:823f0bf439c0c36309954651aef2c2ea5dd33cb47b124ccd97ff6f9b9835d4bf"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:61529b92c525c18841d648e2f06adae910ee9666"
+    treehash = "sha1:0db467116e5976cba4cfc2281cf73c83cb8511e7"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:2f23c39a403058f5080e66d582a8725725c678eb2e32a1e3f45864fb349410bb"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:4205dd795ff6b032e0b34ad9a1d32c0cc74c003cfa9e06be4f25d6afe5f1773c"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -285,8 +550,54 @@ platform = "i686-w64-mingw32"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:302c17c4973c06952d75e266c2567017632d02d7"
+    treehash = "sha1:ee413aee5a5d721cab8ba662e215fcc18ec0d126"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:4e6e634800a9172001a5e873dbba61ee5947e2d6aef2338df6600f346d934640"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:55c1f949c66bcdee3adde1d7981a3c8910a3dccb7299d056c669e73009ce32ba"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "i686-w64-mingw32"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = "Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"
+    filename = "LICENSE"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:e85be19fe19d1e3c83929afea7f545d7bd1d28da"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:586dc2cd0fab2fface26ddb274090e190bfed14b94de571c5db37cf5e1d33359"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:a3776938b240cc46c77ae0a94c38e0a01e956eac"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:3438df13fb7bf015155ffd3a37aa8e94f7d911a054e2e3090d926bf8a8c1bbe1"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz-1.2.11.dll"
+    type = "library"
+    path = "bin/libz-1.2.11.dll"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:896b920d4fb3fb212fefa38de3c33aeb54b2b0e7"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:af06592d08e8138232f1e2841126ff33d14737a451500445c8b0a9a01f3ffdbb"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCC/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
