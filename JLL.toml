@@ -4,26 +4,31 @@ julia_compat = "1.6"
 platform_augmentation_code = ""
 
 [[builds]]
-deps = []
 name = "Zlib"
+platform = "x86_64-linux-gnu"
+deps = []
 lazy = "false"
 src_version = "1.3.1"
-platform = "x86_64-linux-gnu"
+
+    [[builds.licenses]]
+    license_text = """Copyright notice:\n\n (C) 1995-2022 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n"""
+    filename = "LICENSE"
+    license_type = "Zlib"
 
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:3823292163406f3e9787068ee92af58611a960a0"
+    treehash = "sha1:77d2cd7d2192c013206ad54d43c6625146492c36"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:e8f107895e60cc14453581c54e5a9c8dd4a3307a5d0d35e7815f006a3ca510a8"
+        tarball_hash = "sha256:204eb0ec17a27a446a708d52cf4e47ac3818be54017b06eb5428699f92a9350a"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:91b70dc7c29938c060f1f3c99f589fb21574fcce"
+    treehash = "sha1:f52a9eb3ffc36253214fba8db8619a7a36a07522"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:41b5b8f4fb5144bf779872284274a1a51f8ebc1e4be847bf3856ddd55202572d"
+        tarball_hash = "sha256:6c6e1723869a858950422c66ab73cb67afb719a1c29eaeba3ef0f1e0f21bc884"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
@@ -39,254 +44,8 @@ platform = "x86_64-linux-gnu"
     url = "https://github.com/madler/zlib.git"
 
     [builds.artifact]
-    treehash = "sha1:d19cb8142dd4f6fdd19f2502e9f069f9803f4111"
+    treehash = "sha1:881524c8f7463c67455e3b21814d751b8dda7697"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:7721526e6bfe78dedc6e2e648500931ac2eb2099bf241580bf7f9a7920ccec1f"
+        tarball_hash = "sha256:64220aa7398aa71d48d1fc7e4d7ad3b0453181ab9f3c94381187dd787be5a06a"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "i686-linux-gnu"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:19dfed136c33ed794a70e7ad4bd55dfe5002c1ae"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:fad61ceb7bd7ab176dfb880ce424ec533d57987aeaa496b97baba7ed5e929e88"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:e9eacd0d573ec5fbd0f36298f1cf721406b4732c"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:46c70ba56ef8ae9320a549d449a8f76c554e2d70fa519c68f34e210670e19fe0"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz.so.1"
-    type = "library"
-    path = "lib/libz.so.1.3.1"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:c070944c8e4da68ba9cf6abc61504f2017ba5e89"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:1f666ede818f51389a2cf27adafb72593d73ad1504c565d59b91a9c4e8ea411c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "aarch64-linux-gnu"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:045d819493b65dc060ee84a815b3f8e33dd4979a"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:aefb885369eb2f6b49ffc775d33398e48ffb1f1366bbaf87168b9760bc4a63f9"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:69434f2121929a9bfde980b222f693257e38bbf3"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:2211a979d5007fe2e33cd66b866954d48f04be6694b6417111f02954b59ed4ef"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz.so.1"
-    type = "library"
-    path = "lib/libz.so.1.3.1"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:967cdc3afa7ef320058e2aec6dc845f05ad284d5"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:7270c5b96f1c395b94a3c5cbdc56bfaff112e30e6f1a1114e8739ad8cd5bfd0f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "armv7l-linux-gnueabihf"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:92582ced3cf4cdc5608faa39e9db6cc046cdcb64"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:da405bbc31ecef0d417155d48d7ad4d6cf1c09b7e8cd719b5291a87b89bf8fb8"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:794d30bfd56ed50621f46672762caefbd96668a7"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:63b37d6d1f829e5a788c40dfc6a2e4cd7435e79036c42b14ef64b9ab458f97e5"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz.so.1"
-    type = "library"
-    path = "lib/libz.so.1.3.1"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:6f39f7897ab5e4b2418a17933f549b24aa1dc3ac"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:a3fb6172e78b2c8ccb01d9557a1a197e3428f1307964e1dcff6475636b8fe432"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "powerpc64le-linux-gnu"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:1521ea70b1d0899b8ffac60839f4e635f80990b4"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:5797eb7752865e74d0e03dcce4ffd044b178e62c46472d7409c0c5f06e291653"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:c2df5b46e74015928ae3a3dd679dac6a2eba71d6"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:03276962b84854eec74309df62109de07d97019df633be78924bd8811f04a54b"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz.so.1"
-    type = "library"
-    path = "lib/libz.so.1.3.1"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:2cde00faf0803d985c91cbb8f9396d08a3e42f54"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:a8c5109fe229ea8adac2ce9b621ad311ee67bca8134aa3eb208bb167a9a27b39"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "x86_64-w64-mingw32"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:47bcf4f8cf0b65a36d10cf1b256cd5e194dd03ae"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:552570b90c926b2441c440465c0abfafe8a0d243517520a11ca23db09758e906"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:a6c69c04d5501bf6926efc2cfc78d414bd63e5f7"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:426ff8947323130b5d08ae69401a51845bd54837eb8c652253e77d5b4357b1b2"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz-1.2.11.dll"
-    type = "library"
-    path = "bin/libz-1.2.11.dll"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:7ac9216a5e11bc7db37243a4cbccbfe7d8acfe37"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:4cca7fcd6c9d9a7fda12b2a5ec5064b42e036e1075a35688863001f6d1cd06eb"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
-[[builds]]
-deps = []
-name = "Zlib"
-lazy = "false"
-src_version = "1.3.1"
-platform = "i686-w64-mingw32"
-
-    [builds.callback_defs]
-
-    [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:59fa5c248530ca3401f83529454eab7f56cbd54d"
-
-        [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:0d2a2a95e129e3b4defee59f3c8128b005ee713ac2c4c2f97d11455f72a753ff"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
-
-    [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:61529b92c525c18841d648e2f06adae910ee9666"
-
-        [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:2f23c39a403058f5080e66d582a8725725c678eb2e32a1e3f45864fb349410bb"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
-
-    [[builds.products]]
-    deps = []
-    name = "libz"
-    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
-    soname = "libz-1.2.11.dll"
-    type = "library"
-    path = "bin/libz-1.2.11.dll"
-
-    [[builds.sources]]
-    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
-    url = "https://github.com/madler/zlib.git"
-
-    [builds.artifact]
-    treehash = "sha1:302c17c4973c06952d75e266c2567017632d02d7"
-
-        [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:4e6e634800a9172001a5e873dbba61ee5947e2d6aef2338df6600f346d934640"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
