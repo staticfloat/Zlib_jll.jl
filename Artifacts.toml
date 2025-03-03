@@ -5,27 +5,381 @@ libc = "glibc"
 os = "linux"
 
     [[Zlib.download]]
-    sha256 = "64220aa7398aa71d48d1fc7e4d7ad3b0453181ab9f3c94381187dd787be5a06a"
+    sha256 = "2f2843345b8b86d12525e07e542421b9faceb124cbca2791e06ce0668980e899"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
+[[Zlib]]
+arch = "i686"
+git-tree-sha1 = "abd852db730475f0c512cea30ec89c0e3396feb7"
+libc = "glibc"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "145ef6845d573b950df3387f599305c1f3214478f63c4cc31101c51b631259b5"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
+[[Zlib]]
+arch = "aarch64"
+git-tree-sha1 = "d443c5d4ef912c3ffaafbeb3b391380de1075d32"
+libc = "glibc"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "a50f746d8ac50a07519561f3ac806d7de7e6d0d531d2629a2ae040d074ffa4e6"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
+[[Zlib]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "5196a2d7c2e0d73068c08d1964053f5a5ba634e5"
+libc = "glibc"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "8f1fa1cc23ff033e046de41d5f4e63fef4ba2d94538f2f0e50c3e0e7026013f7"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+[[Zlib]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "1cc1d7d3af102fbb9e07f1353d5009e0e0d30f45"
+libc = "glibc"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "ee30b0c154a45c3a60d89c3239230b1c44a234e2727d0a7e486c823ef9f515b3"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+[[Zlib]]
+arch = "powerpc64le"
+git-tree-sha1 = "83bf31fa70ded0df7ae275c8dc2d69eee8d033f9"
+libc = "glibc"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "8867de2b8a5be9726c0862abbd65b7bd445d2004ce2833c76cfe23c73fdf3cdf"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+[[Zlib]]
+arch = "x86_64"
+git-tree-sha1 = "39ed9d1f2db542d64822d6da01a484c6bcb9f53b"
+libc = "musl"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "ac013c0201cfa2e9d01f8ff15d127a3bf5c23396b395de6067e95e0fcc49ea26"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-musl.tar.gz"
+[[Zlib]]
+arch = "i686"
+git-tree-sha1 = "77fee933e35ccbc57f1db06d9a106659450332d6"
+libc = "musl"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "f09ad9bf021b274e110a9aabc0d447d1168c0cd5ded04d6b21875f84a7041ab8"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-musl.tar.gz"
+[[Zlib]]
+arch = "aarch64"
+git-tree-sha1 = "30d112ef518a7bf5e26d83c6d295bd5c7cb07c3e"
+libc = "musl"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "73f675b089c4645bd7b0007eac5732b49bcfe7ddf4e9d4ebb6e0ef6d92bd0691"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-musl.tar.gz"
+[[Zlib]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "279f462d8c8942514070b198fca4a6e0326de572"
+libc = "musl"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "7271b4c56b6e0e6e47234ca87b99022f0ebf0a05b4c5d3cde60b76eb6a2d6f8f"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+[[Zlib]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "fdf24fbd48e4e106821ab14981e7720920b3c342"
+libc = "musl"
+os = "linux"
+
+    [[Zlib.download]]
+    sha256 = "f17f0e303f0411c85a021b0df17f77736a747798f230e48f5f157a0d0c637085"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+[[Zlib]]
+arch = "x86_64"
+git-tree-sha1 = "ee413aee5a5d721cab8ba662e215fcc18ec0d126"
+os = "windows"
+
+    [[Zlib.download]]
+    sha256 = "18226d92df3f2de002774b54dd5ad1e4b86eef9f41d4d82867cb7ac25448fef7"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
+[[Zlib]]
+arch = "i686"
+git-tree-sha1 = "896b920d4fb3fb212fefa38de3c33aeb54b2b0e7"
+os = "windows"
+
+    [[Zlib.download]]
+    sha256 = "44ad2c841ab1c8db55563d4383a1dad884441ac767f884524884ca5f9ed832a5"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
 
 [[Zlib-build_log]]
 arch = "x86_64"
-git-tree-sha1 = "77d2cd7d2192c013206ad54d43c6625146492c36"
+git-tree-sha1 = "8c6208c6f1fe39316c0bba5f0c33970bb32988f1"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-build_log.download]]
-    sha256 = "204eb0ec17a27a446a708d52cf4e47ac3818be54017b06eb5428699f92a9350a"
+    sha256 = "7818f683f1e27c544c10d7fea6d1c62df164d5692e84bc6554d8f12047775f60"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+[[Zlib-build_log]]
+arch = "i686"
+git-tree-sha1 = "77a54269e6cddf69df4d60ec34762a48a0a63a44"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "bf439cc09a6a5bed1966a1bd914b865d379ab60e46ade86dbbcc1353c6c6e0e0"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
+[[Zlib-build_log]]
+arch = "aarch64"
+git-tree-sha1 = "106e056c4a3123170df1fce9051179ebdc90e3af"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "f42eb9eb1e3f7da6ec1390191581c5958582e8fb96fe5094a9f7ea8f05565bc3"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+[[Zlib-build_log]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "45c1e63e13f65a1688cb6157c6d7e63aeb3fe9ff"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "46efb5405da20f5fed144140c7d35ac7de31cfc29926c6c5f9596dff8af2ad2c"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+[[Zlib-build_log]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "c16873f1f63b84ed5995492201ac380f02fa65e9"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "db6d29700217e5eb098d905f9086d45adf5d82295aab4d4a5cc792cacf14dc30"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+[[Zlib-build_log]]
+arch = "powerpc64le"
+git-tree-sha1 = "2a2e291ff8b9768073a760a1f87f0774a58abca2"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "625e331674ce344488ed91d6bdacf48576118bc6764f12f1bd67c475093eac14"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+[[Zlib-build_log]]
+arch = "x86_64"
+git-tree-sha1 = "e1fd144459dc13dbd2e8d9546be65fb4a77c8300"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "93bfedf3f6c3328d86f1882d2384a77f95b341991f0b091537e5dfee12027a22"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-musl.tar.gz"
+[[Zlib-build_log]]
+arch = "i686"
+git-tree-sha1 = "08343021a5d0d1c71174ba1e57f8d64425ef40cb"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "3ec7513908157f0781df72f99bc97aa141ca32eb2dca7820cdec1cc6e41ac5a4"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-musl.tar.gz"
+[[Zlib-build_log]]
+arch = "aarch64"
+git-tree-sha1 = "acc1260e85d30298cbc81bf770952a392e763f79"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "5acbfb4dc7e36308f1455c0aa8aa55d5e5be650c8932915c4c7391e40d51c9e1"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-musl.tar.gz"
+[[Zlib-build_log]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "2599cd688dae63e05a9432f431e07fd07276ebda"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "2e771f71f16cc4c35091ed919cb5bc76c39b14568e7923d262eb156572c39b59"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+[[Zlib-build_log]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "540795bfdf33112261b714132d1ac91f0bc6047e"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-build_log.download]]
+    sha256 = "1451acb5be85111ea0476ccb20221fbbbee3c08a7b1ab67d018a7a8f9793e099"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+[[Zlib-build_log]]
+arch = "x86_64"
+git-tree-sha1 = "17194c1d5b486316ebf94f95cbd3968d8f4017e2"
+lazy = true
+os = "windows"
+
+    [[Zlib-build_log.download]]
+    sha256 = "6ff14a006abc4d19e527ae027cfb4a6302723c286c4ebbbd56a5fbbef16fedd9"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+[[Zlib-build_log]]
+arch = "i686"
+git-tree-sha1 = "6e8dd1d2b7be244ecaf37ac7d4828bff566687e3"
+lazy = true
+os = "windows"
+
+    [[Zlib-build_log.download]]
+    sha256 = "eeda927b52e99cda4e108eb7a34e47d0ed28b2b730e53155aaf58626290161e3"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
 
 [[Zlib-extract_log]]
 arch = "x86_64"
-git-tree-sha1 = "f52a9eb3ffc36253214fba8db8619a7a36a07522"
+git-tree-sha1 = "7ffd2a35021fba5b4cb2a3f96b5d3dfe3377b2e1"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-extract_log.download]]
-    sha256 = "6c6e1723869a858950422c66ab73cb67afb719a1c29eaeba3ef0f1e0f21bc884"
+    sha256 = "3d44f57ebbe381a36c32b8c8d9a3135a9d62f70ab2228787d75138eefbd2a13f"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+[[Zlib-extract_log]]
+arch = "i686"
+git-tree-sha1 = "87a5e400a079f9f30430f1869c96de490d6fc382"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "c7a740079e23607471f626aefa40506fdc523b89aac90e1edb1f20e1d5097e75"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
+[[Zlib-extract_log]]
+arch = "aarch64"
+git-tree-sha1 = "6d221f5b000df3b8d9135de4f09eee30d6d9f602"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "7665c54e4eb3e281cf9a2c9be076759083db6c1b4d08207d80810a2f913f4d88"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+[[Zlib-extract_log]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "7422035c8839099af975b751aa560571fa2fdadb"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "7112ff038c6e1d56aa5630e323e069880cd7398a64882bf18e51c787555b899b"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+[[Zlib-extract_log]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "e8676ae578ee493c2948368445e770f06a2bbd14"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "68884a0d69b4cdcc2d615c1d6c4e07e5b7c7548da6e71907a21cb3b322531292"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+[[Zlib-extract_log]]
+arch = "powerpc64le"
+git-tree-sha1 = "f8b75647e6c4744673667556d6c0210a4f50b961"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "ec97a70dc98a3d487b7b4db375336ee934aa7171cff1e70a549cbc896e5eb860"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+[[Zlib-extract_log]]
+arch = "x86_64"
+git-tree-sha1 = "69d24891fa6eff37ea9b87b8926469e354cf177b"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "594b25f220c696ca4bd447614d7fc5c2f96c434b2a0d94b5a4dcc7373ab37b03"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-musl.tar.gz"
+[[Zlib-extract_log]]
+arch = "i686"
+git-tree-sha1 = "e76c68d18f55d519a49755a770fabce67bbad0ed"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "99da1c15ea3b0d49d1908c457831261aa19d25ca5d97989e27b58b301f6ee91b"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-musl.tar.gz"
+[[Zlib-extract_log]]
+arch = "aarch64"
+git-tree-sha1 = "ec3b8218d8cccce84553cc1ae8ed34c3646ca42e"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "9b8b52ae861a6dfa3f2a762ec4c9c7f5a08ae3f6e4bd58d8e1e599c408f08dba"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-musl.tar.gz"
+[[Zlib-extract_log]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "d58ccbe1e48c57cc742ee2698297e1cc60249e4b"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "61883bbe4ab4dbd9759b809b1adc61b9396a7042efd55a4f407922ad1376cfc9"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+[[Zlib-extract_log]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "607a0485246d4519fce884ad610abda3cbfbb9f0"
+lazy = true
+libc = "musl"
+os = "linux"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "a3209dcb7e1a8f8d1023306eaa1abfb48a2ffbcb0deda246ce1244128ec0d477"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+[[Zlib-extract_log]]
+arch = "x86_64"
+git-tree-sha1 = "b1f23c65c448d3c88d3c70e0b848b879500b48fb"
+lazy = true
+os = "windows"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "58b93bdb60b312e90075ea47647d5775ebf821b13146165d74ed49f1c98ec520"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+[[Zlib-extract_log]]
+arch = "i686"
+git-tree-sha1 = "943d41a5d48936e4ed5d83df401976c13454d5f2"
+lazy = true
+os = "windows"
+
+    [[Zlib-extract_log.download]]
+    sha256 = "8be95d65ab6d0c7d7cf495e00d0630fce82288d21bd2c169abc8ab3ef2b8ea47"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
