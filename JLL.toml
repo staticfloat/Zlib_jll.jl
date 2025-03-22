@@ -18,17 +18,17 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:29d1308cd9b32937cbfee36a7ba6c7feb7c2ec2c"
+    treehash = "sha1:b6368f0f976324e4de5d00b584d01f6a03f2f08a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:489f3770d5bbae26077116e3c407ed5b521879ec0045afc6ed112e818fdaaf9b"
+        tarball_hash = "sha256:85731a2f26f566279d556c0ff5381a7b46c3658c6b8794caec93da4fe0336e4a"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:97c560a3a5c437d345d5dda6a394a05410fcb8c1"
+    treehash = "sha1:f1704aa80c04a8f7f77ce76fe7729e56e97840e8"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:13b7ca0be5a4bf1b80b811dd6856ca239505111439f6896cd18bb6deffa86061"
+        tarball_hash = "sha256:c6bdd7d944df7f15d4808e8a389e32b5fb5f53884ca4d560f595963e9c5a076a"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
@@ -47,5 +47,649 @@ src_version = "1.3.1"
     treehash = "sha1:3a429dd0fa904f02798477bba387158ad7ca4fb4"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:8337f7bf2e9b2ecb3f6b070ee65057d3e0371e463c1b82e99d171e53e3c96f48"
+        tarball_hash = "sha256:8a463c06c585a5afffc8146440b6f70597d971b7b8dfd84ad45694d970bf523a"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "i686-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:38bbad51567f28476388e46a05fedc9b7ab54137"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:0c38df86ea235e7d55a18a33c87e3d5ce085fb2f7e72679e816631456b12b00b"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:f4078030c76a90c3f1a30d442beaab15a74e1658"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:9d839ee5a39d5094b308ac6112041eb25fca126104465cda524477b9cef846ab"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:8d7dd799e243615a4ff3fff665916dab25769b04"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:b0495d5255e539a4860709975369c97db2ab9c71199b8ab1748a3128f3f2c001"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "aarch64-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:af2e7db457bc041aeaaa9475e41332af9a788f39"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:ae65afff8a50ea09fd44e8cd4b518296d6719dd5644b881f2e2e83545eef075d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:6b168753e588adf6e44080b40ce68bacdf78abe4"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:7fb08739fbe1f10e2f18224d5b7964c1960fceadf365675ffbc3360792cf8234"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:2a85c844c6d50a72bb9b4b6bdbfcc6150b2dba6c"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:064b302ad14caf155ba6bd98bcae19c5577e8ce7fd2d1b858a95a4aafd1f6421"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv6l-linux-gnueabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:bfcb194a54ae42a0e915e47f45df238dcb8c6dff"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:072b5c25a643221f7fc4903160b2b3a53c59942dab430f2a8781afdd9f65ecf0"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:6005dad0411a694f84dc24fcd21133a9963c6c31"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:a9cf2f5e9870a5daf4123572d523b7a922abf51209713b21f6809351a8e67bac"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:2ffafa4329960a0af6c1a8588f55fe6bf7e276f2"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:14e546539415c92f20da75484a877362fa0ff2caa63324bd621a00e8aa77414d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv7l-linux-gnueabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:42f7d6caa9faebf466c66a44d5ece00258d623e3"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:2ca29cc11b68f6101527804890bfbe5c07944daa31481ce87750fde45326c464"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:0e7fbbe0627c23bbe80eda22e551dfe219106aec"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:c50fc04534833aed85ae1a0366470fd56018534af13969e78d140b209a678a4b"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:4bc8729e5b8cd954136d85453adc3178f34b8a6a"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:19c1ea3d4bd7614b6b114a44de10601bb0f259d400d1e46c5d06838691e0ca0f"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "powerpc64le-linux-gnu"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:c04e9bcd94318b17da50870e215f6063f53aef84"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:b7fb73934079a9fd3c63d0cf21ee3108fff39a00492d9dcd7f990745ad4334ae"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:8e0611ad5d6a681104f42be8f028f6de8001e4c6"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:35610d897d95bc2544062f9dae6959831dadde14773599c60641d2ad23e92668"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:e499360d1bf2833af8f9b11bf0eae2c043a882fd"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:2431d985d7ade1abda567d85392e6fa96d0f5bb1c743b288a57876492db81d24"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "x86_64-linux-musl"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:9fd6bfd2087a18e409ee53445c954377415178de"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:66fd1211d6b4b1cee45f22af9d13305763cdd4d81ef0ba76cd7ab948b7dbaae0"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:c7dbd5141606a6b40343ce3f1fbca503c0eb9080"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:da4b1b99117ceff4e6d43f8be62ae98b2193850240887b39b970b6950b941bc0"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:a956eb54760dc986c3aa489f57907437885f381b"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:6cb9213e81b640c89e1111c6cbe0ff36db7de00ff5ca87b43056639c1e5cac8d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "i686-linux-musl"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:0d4bc6fccba9861c5948f03c1b9ade56bbc5973e"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:e42d2be0e0f76a45adaae782894ebc126fe56985af718acc01b095dd4e8eeb15"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:ad182f41a5257dc7f53861f5a49aa1f54a234f62"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:814cd9159e57c8cbf63cd35f5f30f9c0b8034915bc634a9d003c00b400e32903"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:cf60b4a2b7f2d94e91ace76033ff06f024775e0d"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:dc571873a12ed31c3d5b63c578b80facf0dfaa6393800321810c54ccfd04c23f"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "aarch64-linux-musl"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:c7b3235448547d23ee39bbd10c857237c0030a3a"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:5c110f856803ad82fbf8368659db00a1c38af16bdff3d9702f38cc575f7e769a"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-linux-musl.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:e65e2bb4d70136e38c274a3a7dbe8b947d54e85b"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:ac2f20a32222ee8e5ebab10296459c2d68ba71ed18976a8df56c9a7fad8daa9a"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-linux-musl.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:bf18fe011fe76397bac9510361728a8c297e94f4"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:5127a17962369e74c918162391ef25c40eab00a0ceffcfba0f0bb4779cc54c04"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-linux-musl.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv6l-linux-musleabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:8aaba786b481c547ae9e9e2aa3c8c1f239728f17"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:234db46d31aa3d55ad603192ed1f8ef200b0329cb32cfdd5d14cf76a8ab18ed6"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:5cef7f340797f7879db89e863c26b954d84b18ac"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:258eca9d0cff3e3c6f3dfec82d93f1df509cc0056e8ceee56fcc564ae12e5f09"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:688ae9a351fa1e2bcb6a89e8354eb1561e7544a9"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:ad743597e3b50e97109276f3c73d0561bb5c7ce29bbebd146ee4943181500039"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "armv7l-linux-musleabihf"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:2731c51700f8b4233b15747f63dfc3e9b931b282"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:2bb43c1f1dbcb81e52a502d3d922bb134c63462b89470a98337aabb1f4878d46"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:e62691af229c5cfb72df451926cb29f200e9866b"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:c520b934a78a0d174a93b00f8376038c9c511b6d04bf487d84acdff91baa7cb3"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.so.1"
+    type = "library"
+    path = "lib/libz.so.1.3.1"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:f6252ed6cde900b96ad6494a9a059b5d1421b959"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:790153381745ade0f636dbe10d2b28848d7e4d4b531eee7a233e9eab30b466e9"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "x86_64-w64-mingw32"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:445c0a99dbb83d28d1063f65071e18699cbec255"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:4d546ba41e60133e85b945b8443245df82140f0ef2952a64291ef1ed6d720463"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:ca547d06e149161ec87bf842a81707b38de708f9"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:3967957707d2ae8d0fece083b997b258f64758c39853ae9b3dbaa80e1f6dcc88"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.dll"
+    type = "library"
+    path = "bin/libz.dll"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:1390a92df1aaebda287ed3c4b1a9f338ac935e36"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:2c458af30e0ce80094043a98dcb835507a50401707d9de5d8bc86179c15f4719"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "i686-w64-mingw32"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:818053f065b9834335d658c3a91b1dd96e6e09e6"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:c5d280b80d2e9fb333935d338770587d912c1cee220c284a01f445f4517d0eb9"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:3a73acafb11cd99c38f1b3aca1dca1c1216c0457"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:57537e9b771cdd192d37c84a03cccda3e8a9c396fa78a390971f085a47e9389b"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "libz.dll"
+    type = "library"
+    path = "bin/libz.dll"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:e9e87557be7b90eb0764524ff5833e6de76caf0f"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:274e164d2572a3ba6d2013189b483855b82d4d94cdb996f095919b7113ed0bde"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "x86_64-apple-darwin"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:d8075a16301d7b9966bfebc779f10645e399f528"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:f1ecb9cf3adc38427fabadc4654a13b005a34f2549e481882340077d11adc0e3"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-apple-darwin.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:e3e3d8d5330eb1539cf6e95703b4e6204f1c5268"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:ad768207938dfba16613605ed26167c95395a6ccb9a0cca35b6fef877718b85a"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-apple-darwin.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "@rpath/libz.1.dylib"
+    type = "library"
+    path = "lib/libz.1.3.1.dylib"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:c0e4c7e43fcdbd7ccc7b18d3fb269e42e2f8e544"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:91c5ef98bae360437cf84e8e05bfe7271f178c40b346a176be0ae2007e54e592"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-apple-darwin.tar.gz"
+[[builds]]
+name = "Zlib"
+platform = "aarch64-apple-darwin"
+deps = []
+lazy = "false"
+src_version = "1.3.1"
+
+    [[builds.licenses]]
+    license_text = """ZLIB DATA COMPRESSION LIBRARY\n\nzlib 1.3.1 is a general purpose data compression library.  All the code is\nthread safe.  The data format used by the zlib library is described by RFCs\n(Request for Comments) 1950 to 1952 in the files\nhttp://tools.ietf.org/html/rfc1950 (zlib format), rfc1951 (deflate format) and\nrfc1952 (gzip format).\n\nAll functions of the compression library are documented in the file zlib.h\n(volunteer to write man pages welcome, contact zlib@gzip.org).  A usage example\nof the library is given in the file test/example.c which also tests that\nthe library is working correctly.  Another example is given in the file\ntest/minigzip.c.  The compression library itself is composed of all source\nfiles in the root directory.\n\nTo compile all files and run the test program, follow the instructions given at\nthe top of Makefile.in.  In short \"./configure; make test\", and if that goes\nwell, \"make install\" should work for most flavors of Unix.  For Windows, use\none of the special makefiles in win32/ or contrib/vstudio/ .  For VMS, use\nmake_vms.com.\n\nQuestions about zlib should be sent to <zlib@gzip.org>, or to Gilles Vollant\n<info@winimage.com> for the Windows DLL version.  The zlib home page is\nhttp://zlib.net/ .  Before reporting a problem, please check this site to\nverify that you have the latest version of zlib; otherwise get the latest\nversion and check whether the problem still exists or not.\n\nPLEASE read the zlib FAQ http://zlib.net/zlib_faq.html before asking for help.\n\nMark Nelson <markn@ieee.org> wrote an article about zlib for the Jan.  1997\nissue of Dr.  Dobb's Journal; a copy of the article is available at\nhttps://marknelson.us/posts/1997/01/01/zlib-engine.html .\n\nThe changes made in version 1.3.1 are documented in the file ChangeLog.\n\nUnsupported third party contributions are provided in directory contrib/ .\n\nzlib is available in Java using the java.util.zip package. Follow the API\nDocumentation link at: https://docs.oracle.com/search/?q=java.util.zip .\n\nA Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>\ncan be found at https://github.com/pmqs/IO-Compress .\n\nA Python interface to zlib written by A.M. Kuchling <amk@amk.ca> is\navailable in Python 1.5 and later versions, see\nhttp://docs.python.org/library/zlib.html .\n\nzlib is built into tcl: http://wiki.tcl.tk/4610 .\n\nAn experimental package to read and write files in .zip format, written on top\nof zlib by Gilles Vollant <info@winimage.com>, is available in the\ncontrib/minizip directory of zlib.\n\n\nNotes for some targets:\n\n- For Windows DLL versions, please see win32/DLL_FAQ.txt\n\n- For 64-bit Irix, deflate.c must be compiled without any optimization. With\n  -O, one libpng test fails. The test works in 32 bit mode (with the -n32\n  compiler flag). The compiler bug has been reported to SGI.\n\n- zlib doesn't work with gcc 2.6.3 on a DEC 3000/300LX under OSF/1 2.1 it works\n  when compiled with cc.\n\n- On Digital Unix 4.0D (formerly OSF/1) on AlphaServer, the cc option -std1 is\n  necessary to get gzprintf working correctly. This is done by configure.\n\n- zlib doesn't work on HP-UX 9.05 with some versions of /bin/cc. It works with\n  other compilers. Use \"make test\" to check your compiler.\n\n- gzdopen is not supported on RISCOS or BEOS.\n\n- For PalmOs, see http://palmzlib.sourceforge.net/\n\n\nAcknowledgments:\n\n  The deflate format used by zlib was defined by Phil Katz.  The deflate and\n  zlib specifications were written by L.  Peter Deutsch.  Thanks to all the\n  people who reported problems and suggested various improvements in zlib; they\n  are too numerous to cite here.\n\nCopyright notice:\n\n (C) 1995-2024 Jean-loup Gailly and Mark Adler\n\n  This software is provided 'as-is', without any express or implied\n  warranty.  In no event will the authors be held liable for any damages\n  arising from the use of this software.\n\n  Permission is granted to anyone to use this software for any purpose,\n  including commercial applications, and to alter it and redistribute it\n  freely, subject to the following restrictions:\n\n  1. The origin of this software must not be misrepresented; you must not\n     claim that you wrote the original software. If you use this software\n     in a product, an acknowledgment in the product documentation would be\n     appreciated but is not required.\n  2. Altered source versions must be plainly marked as such, and must not be\n     misrepresented as being the original software.\n  3. This notice may not be removed or altered from any source distribution.\n\n  Jean-loup Gailly        Mark Adler\n  jloup@gzip.org          madler@alumni.caltech.edu\n\nIf you use the zlib library in a product, we would appreciate *not* receiving\nlengthy legal documents to sign.  The sources are provided for free but without\nwarranty of any kind.  The library has been entirely written by Jean-loup\nGailly and Mark Adler; it does not include third-party code.  We make all\ncontributions to and distributions of this project solely in our personal\ncapacity, and are not conveying any rights to any intellectual property of\nany third parties.\n\nIf you redistribute modified sources, we would appreciate that you include in\nthe file ChangeLog history information documenting your changes.  Please read\nthe FAQ for more information on the distribution of modified source versions.\n"""
+    filename = "README"
+    license_type = "Zlib"
+
+    [builds.callback_defs]
+
+    [builds.auxilliary_artifacts.build_log]
+    treehash = "sha1:c3c24699b8a35765145e3dde31b481ee1fd7fc43"
+
+        [[builds.auxilliary_artifacts.build_log.download_sources]]
+        tarball_hash = "sha256:a0d137a20353903210c719e52d4e728c642ba04632ebabd03690d8181e83ed21"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-aarch64-apple-darwin.tar.gz"
+
+    [builds.auxilliary_artifacts.extract_log]
+    treehash = "sha1:17272ab6113d9934338ea6280f32f0648e32d49b"
+
+        [[builds.auxilliary_artifacts.extract_log.download_sources]]
+        tarball_hash = "sha256:aca4677ab08ef91ec59df934511841ad87c7b32543d64e8a17e2921a2c3c66bd"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-aarch64-apple-darwin.tar.gz"
+
+    [[builds.products]]
+    deps = []
+    name = "libz"
+    flags = ["RTLD_DEEPBIND", "RTLD_LAZY"]
+    soname = "@rpath/libz.1.dylib"
+    type = "library"
+    path = "lib/libz.1.3.1.dylib"
+
+    [[builds.sources]]
+    treehash = "sha1:51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+    url = "https://github.com/madler/zlib.git"
+
+    [builds.artifact]
+    treehash = "sha1:d5d0fb7814c9eca98f2a507751a9122ab972fff1"
+
+        [[builds.artifact.download_sources]]
+        tarball_hash = "sha256:34de4488b47fa2831bb14d64c184ded37274c69fe10db3f58597ddea6e3533b7"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-aarch64-apple-darwin.tar.gz"
