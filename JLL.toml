@@ -1,5 +1,5 @@
 name = "Zlib"
-version = "1.3.2"
+version = "1.3.3"
 julia_compat = "1.6"
 platform_augmentation_code = ""
 
@@ -18,18 +18,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:0f9ec0c78d214b8413951d6ed9e0df7c2fb7a076"
+    treehash = "sha1:f8ba4fd3051e14818a4236114a0422d1cf469d1a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:916d5d47b446f5fc346b2057bf16389f50ae7330bd640348447bda7e11624846"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:385f7e93ddf2f8b4ec94bbd5a2ffa211bc16cf77f72ebdac8376a9c0ec0d4fb1"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:34540d2ea91bbbe1cbc095544ff8ab78ae2bd214"
+    treehash = "sha1:ff869522b2e45ab7893522e7064b76fba278506d"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:30e6fe26908989c657a34b9d390d7989ebfbd87e98abdaced11344de4678af9e"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:39a2e9201a4c6083dd544a23b153435967ec4e5340179beded7e0ed9b7628cf1"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -47,8 +47,8 @@ src_version = "1.3.1"
     treehash = "sha1:881524c8f7463c67455e3b21814d751b8dda7697"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:24fe44bd280b86c076f8fa3991318471c36abb9b8d19bb5f46d3f8f30d3594fd"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:8b4cd5b1998dc2b1a87ab2c1a0442bad1c120c5262629542f6bdc4832cbc243f"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-x86_64-linux-gnu.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "i686-linux-gnu"
@@ -64,18 +64,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:92ebadfb87a8688d7ceb53df7d5badaaab4610f5"
+    treehash = "sha1:1d66e4628cb45fa8e5f98e82f1267a876394f751"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:7c353ea7fe64c24ef1d3ee2cef3cc758a68440d169f42656bdc38d5d7417a42a"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:af0953a0b768600e55204f5f497e1a35f304bf340c1dd08d0a643c67c5f04e7d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-i686-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:cfce1faa301c477728c2b470668929dac4042864"
+    treehash = "sha1:b1264bafc3fb6fbe165e6cff303463e4d4014984"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:d361e7d938db1c9f1a1a3eeb7268fa3780a028d3a506b3e9f53137f3f27438b1"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:d8fa9a876e80754111675462d59f4ae1e1c739cc4444b36bdc12927e0d0c7631"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-i686-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -93,8 +93,8 @@ src_version = "1.3.1"
     treehash = "sha1:abd852db730475f0c512cea30ec89c0e3396feb7"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:8bed1b9b1287636cb14fc474b9ffcbd392d0d1a250a8fd1063809996cab004d9"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-i686-linux-gnu.tar.gz"
+        tarball_hash = "sha256:4fbb1d80a385a230bdabaaf988917d0c2698d22edcc0a8b6d348b631f4363c14"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-i686-linux-gnu.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "aarch64-linux-gnu"
@@ -110,18 +110,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:2251d96246fd8654bd8b0b6e4dfc9d8668a9ff29"
+    treehash = "sha1:cf52475a6bfe620c15fb7fb5a2e29e054a80d450"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:e67f732b598a703cc35959b84ab7b0041e6b2ff5fb73a60fd92c2108d16f556d"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:06531b21ade63051c1da7e2a961a9a6f2945daeadcc82a1fbe09c7963c892d02"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-aarch64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:24fdde75875701d85dbf11a40bff300a7478ebdb"
+    treehash = "sha1:5246c42c3666f7b8219fdbe71e6db9917a2aeba7"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:fddd595f836f58e876109c303ca1a53475760d9dd9edaab75fc7343e3ab3cfb6"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:ad6a4f708c58c8aa2b5a48261a18f35c9b28db3d0fb76153797283156bebbd4f"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-aarch64-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -139,8 +139,8 @@ src_version = "1.3.1"
     treehash = "sha1:d443c5d4ef912c3ffaafbeb3b391380de1075d32"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:273a2bea67131cfea2f10c567779b2f1e30c036e7c0b50cba9f59f8a7c978696"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-aarch64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:c7fbacbb6219725c7b93d04f8276431c81ba45aa76f5e3aa9460f3a1992e7b81"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-aarch64-linux-gnu.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "armv6l-linux-gnueabihf"
@@ -156,18 +156,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:07ec62646fff4e5b78dd47f1fe97b50f23a431f6"
+    treehash = "sha1:b786c0511135861f44a502c0445cdb0b2ecd4801"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:4a99017a507d0fe262e707e2ce88b55ba7ef2a95ba694d974ec1272795954a87"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:eed34066b6bcd675f6efd0e0a0ffcaa669189b32975ba3e22cbc4cc393786d18"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-armv6l-linux-gnueabihf.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:a37e656c04037e01e0aa6f06dd4074fe531a1058"
+    treehash = "sha1:cdd33778f3ffa71d4cdb457651fc32703fd956e4"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:9ad8d07a6565c9173d655386b4e8ee5f5322145d026659676826cb11fe434f04"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:e4ee9667633de47279aa2c6b73a3043eaeea7dd9e3c09da6b9764b00b7702254"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-armv6l-linux-gnueabihf.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -185,8 +185,8 @@ src_version = "1.3.1"
     treehash = "sha1:5196a2d7c2e0d73068c08d1964053f5a5ba634e5"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:f28200724bb850cc2384bda21d1bacca1335269d7a2cd4fd33e8df8447085f00"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-armv6l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:4202e054d93364c6ab01766eee027905132a130b4da7ea06d2d5ca50206ce1c3"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-armv6l-linux-gnueabihf.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "armv7l-linux-gnueabihf"
@@ -202,18 +202,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:6be4d4a92fb9040c9f8e0bbd89f873aef8c60c35"
+    treehash = "sha1:83fb9cd57ae211abaf7f712313fd1b912f8206de"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:5756002ac737c67f39ba69f280dbb1f84ab02eeef40feeace903f92be58adc26"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:54718e4c6de86ff8d683d8f0c782a66c7cbe9f4b277a59be9930bea468896131"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-armv7l-linux-gnueabihf.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:5cd56e3e83f5126a3188e486c11d3e4efc272ef4"
+    treehash = "sha1:a7d2a21dd82f69a175d5c93a70f03c50a77f7400"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:856e5f7a02b879b27362d53351f91c1e402497d3c317c8461849a2ad8d4a6a5f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:712749b7efc6c7aa817814a667431d928e8295d6c14c3e650abcd981df4c9def"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-armv7l-linux-gnueabihf.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -231,8 +231,8 @@ src_version = "1.3.1"
     treehash = "sha1:1cc1d7d3af102fbb9e07f1353d5009e0e0d30f45"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:7816227feb7cacb19395849279d3c8683d620e4fb0f5ce0b16e924dc890108c2"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-armv7l-linux-gnueabihf.tar.gz"
+        tarball_hash = "sha256:c06a2765945e92fad7fa5a7e434c43ffc3dcea0801bada1ec1a8db8f8d9af392"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-armv7l-linux-gnueabihf.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "powerpc64le-linux-gnu"
@@ -248,18 +248,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:0cece2127fe00f5bd3e823efa37582a5d6a1a5a8"
+    treehash = "sha1:23c4794c18ab2e0f260e8b2e3498caa21e8c8ce8"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:067f34a5f40bd89fa3d99ca9ac1ae3bfc13220fd5d5bca4f668f755cf151c71c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:f3bf1557bce4ff9f537c3b472a557a986134bfbad46ed27918f07de8aae2bdd7"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-powerpc64le-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:34d44df5aa7f875fe085749e5a924ad0f1b84f5c"
+    treehash = "sha1:2b600d6539da8722da5bcccf456c180c47beeb92"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:5399609466f8cf4d60bdddd6f453c3e1c71902f452d8b8e1902bb77263cefe75"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:26d1383181e39bfc906577e3f4a97c82875eb0ed2c54916111c2feebcb2a9b66"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-powerpc64le-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -277,8 +277,8 @@ src_version = "1.3.1"
     treehash = "sha1:83bf31fa70ded0df7ae275c8dc2d69eee8d033f9"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:d17b33cbdad57716a2bc1bce5bcbc60832636bf4aada6226fd614a348e106dff"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-powerpc64le-linux-gnu.tar.gz"
+        tarball_hash = "sha256:87650a98cf91eebad4afd9b04c873ee540d2e057c5fac05c3ca726fa38cacabf"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-powerpc64le-linux-gnu.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "x86_64-linux-musl"
@@ -294,18 +294,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:1bfe210ba106445d534890946cb410f81902a0ab"
+    treehash = "sha1:ed5b21abb6d43a2b02929eefd254498b3f0c221e"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:e8f8db7ba6532bf5222e9f85c862abf2f0702edec24a18089e095593ac00253a"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-x86_64-linux-musl.tar.gz"
+        tarball_hash = "sha256:15fce82eb52ab1f39a13e0911bf8040c9197dbc0be981d780374fc4c6620c110"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-x86_64-linux-musl.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:de4e382c31a34596ebe915603bdfcfc9fc51ba79"
+    treehash = "sha1:648f42e1668b6fc4bebb3bc47a48cea9dcc75ef9"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:3eb35481f709c3c47b0d3b253b75cf6ec685a16ecbe07b47f9722fd45d8d612c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-x86_64-linux-musl.tar.gz"
+        tarball_hash = "sha256:ca3f41f189df5b45f812b3809911ae3b53dd9488cfa2defbd54adf94cc5637a9"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-x86_64-linux-musl.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -323,8 +323,8 @@ src_version = "1.3.1"
     treehash = "sha1:39ed9d1f2db542d64822d6da01a484c6bcb9f53b"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:5efb591750a534ced7b99c966cbd1362d253274b35b510817ae79ccb693c383d"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-x86_64-linux-musl.tar.gz"
+        tarball_hash = "sha256:6413bc105ae9536ed8c81cb8a0dc399f0e8bc9d325ecd2a88386ca2cb0c81a93"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-x86_64-linux-musl.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "i686-linux-musl"
@@ -340,18 +340,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:0fd7dc24ee27884797ab1588551c8b14f8e6c62d"
+    treehash = "sha1:67cf9329a6a2bcb70b9921bba1bacda11ad5d8c2"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:c6f277b2bfab2e1f0f8c5e8c0887f10c8d5294025b0cecf0d4ac8f7dbe7d919c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-i686-linux-musl.tar.gz"
+        tarball_hash = "sha256:3f7beaf1f71f436b7568cba4ffc4e21802756874ee35ba3a026d407439fefd08"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-i686-linux-musl.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:04a2b55198d81f128f388c55fb200209ae8d6403"
+    treehash = "sha1:ef82f04997cd4d1823ad1c693941473fe9ceb6ee"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:f17a9832e9411f967bbf0e582d02a113d122890141303bab6b861373a070d102"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-i686-linux-musl.tar.gz"
+        tarball_hash = "sha256:b950fab16611af9347ab536dd010a0581c91aefb2ee643e62de119cec089793a"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-i686-linux-musl.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -369,8 +369,8 @@ src_version = "1.3.1"
     treehash = "sha1:77fee933e35ccbc57f1db06d9a106659450332d6"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:ea673b8b7cbaadcb5d2369dd59d33163eb87bb4ea6859436290ed5c22a538ae9"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-i686-linux-musl.tar.gz"
+        tarball_hash = "sha256:6dba59b0e1552656ce49c463b8a24251817249bdeb85c7b216ee101963cc5320"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-i686-linux-musl.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "aarch64-linux-musl"
@@ -386,18 +386,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:ced6e3a7759e7c7e455e9517108ab7eb32b73869"
+    treehash = "sha1:aa938edd0bd38fe82ab521f61d53dbaed87a2e99"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:52919ef7002f8fb22ae251d2a1802bf574089c07169529c9d2cf8dd8afa9a140"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-aarch64-linux-musl.tar.gz"
+        tarball_hash = "sha256:f29ddce3f4d135c0e63d5a6585eba649f1fc7f882b705a7e7e17766199fd6ffb"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-aarch64-linux-musl.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:374cfb19d33ed3803af0df3f5af0c989510be3c2"
+    treehash = "sha1:f20c9983d59b37fb07c2b023507576a2d38774fd"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:6d0a7afd9475c3f63a32e445e10de018a4498be5ec7f618dde7b0bf4ddc3beae"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-aarch64-linux-musl.tar.gz"
+        tarball_hash = "sha256:2508e2cf511a6deb7b6ac5337402ef14c1f8099c65bc5ab4eb349fef0b55e748"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-aarch64-linux-musl.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -415,8 +415,8 @@ src_version = "1.3.1"
     treehash = "sha1:30d112ef518a7bf5e26d83c6d295bd5c7cb07c3e"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:1d0735af2570f526fc5664655a47feb29c3bae977d2987de166a1a2b07f6dfd7"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-aarch64-linux-musl.tar.gz"
+        tarball_hash = "sha256:906a4dda9ac41cc11b87c107481d0255d1d86a76a1a2b4bb8ea3439747de21d7"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-aarch64-linux-musl.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "armv6l-linux-musleabihf"
@@ -432,18 +432,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:552338a952981a36e71c325b3c08ea4b37ecb228"
+    treehash = "sha1:1092679d02955dbcccfe31a30792b935f804b1e7"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:5a7f4898e52758c7ced143f08e91999bb7a4c84ec8d3c7df1280d7de715f757e"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:3b5c682eb04ed21addc2391866e37682b2fb365cbee530af0feb96468476db2d"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-armv6l-linux-musleabihf.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:bfeb0e0429ea5f96944651f7f77c41aff622e5ff"
+    treehash = "sha1:814740592d661ac2d508d89001e837879866726f"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:da9da0a39637516e93f4d8532fc375d2e535df2adcdb57d48a659532727a81ef"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:764cd62b806b08fc9eee6eceb49ae656446b56f77b7d4e3750aa21aa3801b35f"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-armv6l-linux-musleabihf.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -461,8 +461,8 @@ src_version = "1.3.1"
     treehash = "sha1:279f462d8c8942514070b198fca4a6e0326de572"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:9559928e2c3e5c4e6d8c3934ae114cef9ba9ef859da18266d821c7512deb9403"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-armv6l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:b13487ffbca0a00d95e7208fd96cdafdcbe212b0d9c06c77ff93edac7f832f16"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-armv6l-linux-musleabihf.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "armv7l-linux-musleabihf"
@@ -478,18 +478,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:ba33297b035b915c8e2336dd9ff8ca9717c74b4c"
+    treehash = "sha1:71169bc821af633f57d4b20d8c6c6cf91cab88ed"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:6abeb08671fccb9a5a3f5ebdcc87a3fed87a0c1de7861fb53b0cb2eacc467ea8"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:3cbdd7d514aca0b6faf493fa8c1a1e2d81add940c29cdc7f7a7066304819bfd2"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-armv7l-linux-musleabihf.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:52ce593c525095958bed7ecc4704341bf35f5de7"
+    treehash = "sha1:87cf46f8a72a302fc6c9128aa45094ca4b7a6527"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:f88fc1cfc11a332e8ced893705e2b9dede7bc8d5d5dc90d5e65881156fc88d0f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:74dbdce87dbbf1d5a3e9eaf79907089ebd56e1aa50fa4d1e0ac2088775b5cfc0"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-armv7l-linux-musleabihf.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -507,8 +507,8 @@ src_version = "1.3.1"
     treehash = "sha1:fdf24fbd48e4e106821ab14981e7720920b3c342"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:1dfab3fca85a059bc2a8a42c1bb7b1849e767251d606523bf729f02993f15e10"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-armv7l-linux-musleabihf.tar.gz"
+        tarball_hash = "sha256:543bce151f21c6227b353149d1d6fd5ea346dca0b943468f65fee2524c6b7b63"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-armv7l-linux-musleabihf.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "x86_64-w64-mingw32"
@@ -524,18 +524,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:ee23f6dec6003f1287931afa8a40e6eb031705b0"
+    treehash = "sha1:08cc9442ebc79b2cca840101aa30963b253a7a32"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:3d75ed5c70cb9f99ef768cf6c458aaf6ca1378a063a3528863c05a0ae8bf7234"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:35f3ec9c56e375638a9b5fabf000643db6abf3f052947051407513706f9a78d1"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-x86_64-w64-mingw32.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:645270ba84dffe36aa9b2ececb004ded72946e92"
+    treehash = "sha1:e1cd68adaa30cd416c6252eb31b18282012cae93"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:1013ba3d4690a2cc23dacd6e9bfdb787b71d1198c284af70f1cf3beeacc91691"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-x86_64-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:2f6248532291d4685f5d060aefd7f032260a659e3abc6df66f00eccd9d17ac38"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-x86_64-w64-mingw32.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -553,8 +553,8 @@ src_version = "1.3.1"
     treehash = "sha1:ee413aee5a5d721cab8ba662e215fcc18ec0d126"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:83309b1a99681d33247e322361f484f1f838bf0818ce0ec74aac56fcb168375d"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-x86_64-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:eec9fbf6487dba8e56050af187356752c65efd372d40b6f78c65c7712f6b548c"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-x86_64-w64-mingw32.tar.gz"
 [[builds]]
 name = "Zlib"
 platform = "i686-w64-mingw32"
@@ -570,18 +570,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:5d7f44cdb413e2b8a4ffd1415791744f37574654"
+    treehash = "sha1:8a4ef92041545e61dcdd563175f9d8a07a38a35a"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:e4e1e4d98b51b5a5fbbbf0ebec25ca03f952e4a12f92c9ee24c97b43cb71e68f"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-build_log-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:09db0a909196b7b08c897b4e6353140b84894cd18daed40dd2caaad7fa6ed01c"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-build_log-v1.3.3-i686-w64-mingw32.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:e6e382c3592e429d19d8f2c62d85ead248b27bf2"
+    treehash = "sha1:f3afdb2c2ec3f1fd911738c91be0e7423f3176b4"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:73d76a7c769abc711ca50e69da5fa2789b914c0504ec4cf54a763301cd186990"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-extract_log-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:c173a2c6873efb76b91ff8ca79a39b4c6712049db2f9d5573adce3f9646e2719"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-extract_log-v1.3.3-i686-w64-mingw32.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -599,5 +599,5 @@ src_version = "1.3.1"
     treehash = "sha1:896b920d4fb3fb212fefa38de3c33aeb54b2b0e7"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:ce3570c636bcd51904e37d1261bfae075251996212df57f073ac0e6abdc4fc92"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-universe_test/Zlib-v1.3.2-i686-w64-mingw32.tar.gz"
+        tarball_hash = "sha256:90f2f13c27c972b431507f554c13c5e0bea6c1faa29a9ca189fca8c6c12993ed"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.3-universe_test/Zlib-v1.3.3-i686-w64-mingw32.tar.gz"
