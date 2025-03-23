@@ -25,8 +25,6 @@ The binaries for `Zlib` have been built from upstream sources version v1.3.1:
  - `Platform("armv7l", "linux"; call_abi = "eabihf", libc = "musl")`
  - `Platform("x86_64", "windows"; )`
  - `Platform("i686", "windows"; )`
- - `Platform("x86_64", "macos"; )`
- - `Platform("aarch64", "macos"; )`
 # Dependencies
 The following JLL packages are required by `Zlib`:
 
