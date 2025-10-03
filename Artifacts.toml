@@ -5,27 +5,27 @@ libc = "glibc"
 os = "linux"
 
     [[Zlib.download]]
-    sha256 = "871ad531803504a820db97840bf900b846ee24ead54b5ccf8264026846fd291e"
+    sha256 = "81ab663a33615e98fc78f21c924932cd82f6682d42c2212b8e757323765ad8fd"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
 
 [[Zlib-build_log]]
 arch = "x86_64"
-git-tree-sha1 = "43f4f3d9f1919e06b223640a4762ff3672feb2e8"
+git-tree-sha1 = "09c188d564c524fd2655ef2ff8a9034b45e1aef0"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-build_log.download]]
-    sha256 = "340a1ffd39b3a8341443da8ebcdd7083f193a95e254df45ee8c6b6b07cb18418"
+    sha256 = "cad316e398a7219b0b46cce9a24513c50e6d166a37bb995f8671b6f843a6f05f"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
 [[Zlib-extract_log]]
 arch = "x86_64"
-git-tree-sha1 = "8bd8c877992e2201e5290df7e1ed405036fcedfd"
+git-tree-sha1 = "f96199498e11223dc6c2ef2659e2ff1e6932cfe7"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-extract_log.download]]
-    sha256 = "b8eddce11a654feef787bdc4005fdb40c3a9c047f1cfda0a8b58c5ab62abaf3d"
+    sha256 = "5e144bd691e7955955a01e0e24ea11cc891ef92967624501356c8a8931df03ce"
     url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
