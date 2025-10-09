@@ -1,31 +1,31 @@
 [[Zlib]]
 arch = "x86_64"
-git-tree-sha1 = "0cfb0a3d5ac3ebbe834bab0060f3f0831abbd379"
+git-tree-sha1 = "867861eef4edfd96cd1877e3c6eb39259204342a"
 libc = "glibc"
 os = "linux"
 
     [[Zlib.download]]
-    sha256 = "7a5d773e25828f6bc17916205a5f6967aa984784697bb1f7d51bf37bd5a60344"
-    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.4-GCCBootstrap-x86_64-linux-gnu/Zlib-v1.3.4-x86_64-linux-gnu.tar.gz"
+    sha256 = "614d454ff7bc73534b26eb5293bcc98a5f35300f0ed350e266c7ebce3fe2a96b"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
 
 [[Zlib-build_log]]
 arch = "x86_64"
-git-tree-sha1 = "ee983b2ebbbcc78340823e88be5fe944a93acf23"
+git-tree-sha1 = "99547ca846c8e604676bc3e21e59d61e379bbd90"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-build_log.download]]
-    sha256 = "13d0540e522a7a14a23535f1075ba62caecbf0e8cf3c40349bd1a8e99d409466"
-    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.4-GCCBootstrap-x86_64-linux-gnu/Zlib-build_log-v1.3.4-x86_64-linux-gnu.tar.gz"
+    sha256 = "bd4655e43d2482950f706717f6cd557ed189d7d0649cbd4f949443f5c3118570"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
 [[Zlib-extract_log]]
 arch = "x86_64"
-git-tree-sha1 = "c0fa520786dadbd1720f6f4d5c08f73ab6698f4f"
+git-tree-sha1 = "2196146e0401c1e6b9a391e3a4cab3f4232e56ea"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[Zlib-extract_log.download]]
-    sha256 = "905de8c8e0f9a368e16898bab27055caafe06a3637401c92f9b6f6ef2a440d8d"
-    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.4-GCCBootstrap-x86_64-linux-gnu/Zlib-extract_log-v1.3.4-x86_64-linux-gnu.tar.gz"
+    sha256 = "066930261ca9160be4b5c7a7759a120ff6a1fb1d1f661f773bd1a2bb1349fb72"
+    url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
