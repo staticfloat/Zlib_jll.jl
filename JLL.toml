@@ -18,17 +18,17 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:9a79a90ad009e703142cc14ca04f1db15d9c5096"
+    treehash = "sha1:b27b5cf4c3d544640c21f3111c377d1977900d99"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:d0adcd75320c97676af019ffa72e2c1647f22f0b8ac5646316825f032af19b4a"
+        tarball_hash = "sha256:e630779e89ef20013dbfb7daefbb04788e9f972917e898c5305a93ee44d12714"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-build_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:f55a6a21421edbc560f138d75f6806373641d66f"
+    treehash = "sha1:53ab29cab0f6bf71597a90f31cf4417b5fcfad49"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:4d24595f367f0e0e08fc57e000d639020da5739a2e28b45c4a5abdd73266b003"
+        tarball_hash = "sha256:54a70e8eb5a62fd18a30ace04bee4d8e3dd5b913cb29ab17095b5526140c49c6"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-extract_log-v1.3.2-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
@@ -47,5 +47,5 @@ src_version = "1.3.1"
     treehash = "sha1:867861eef4edfd96cd1877e3c6eb39259204342a"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:442aa1f211c9365bc3ba7c65bdd151f5df136e588edd93e32de411feb543d306"
+        tarball_hash = "sha256:b50150b6cd4e6bbd66d204f3641dc480a4ac61a15a4ae0fe5e6d317559ce043e"
         url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.2-GCCBootstrap-x86_64-linux-gnu/Zlib-v1.3.2-x86_64-linux-gnu.tar.gz"
