@@ -1,5 +1,5 @@
 name = "Zlib"
-version = "1.3.9"
+version = "1.3.10"
 julia_compat = "1.6"
 platform_augmentation_code = ""
 
@@ -18,18 +18,18 @@ src_version = "1.3.1"
     [builds.callback_defs]
 
     [builds.auxilliary_artifacts.build_log]
-    treehash = "sha1:a5ed4a34a4a6d1d22fe212ffff2d34b8a436bacf"
+    treehash = "sha1:8b8ee6fca1a0f26e2ba416c280ab2c1763e581a9"
 
         [[builds.auxilliary_artifacts.build_log.download_sources]]
-        tarball_hash = "sha256:a1f1b76115163fdb4ddf1db32d211f533133095aba55ac6562a47ac92c06774c"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.9-GCCBootstrap-x86_64-linux-gnu/Zlib-build_log-v1.3.9-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:09b9765675682789cd4a013373acfdab032ed6cd6f64f02074a21965fe1c55ff"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.10-GCCBootstrap-x86_64-linux-gnu/Zlib-build_log-v1.3.10-x86_64-linux-gnu.tar.gz"
 
     [builds.auxilliary_artifacts.extract_log]
-    treehash = "sha1:041e516978605dfe51172e4307f3ae7db75e02e9"
+    treehash = "sha1:e38d2721067477ad787e72d193d3724f84c4795f"
 
         [[builds.auxilliary_artifacts.extract_log.download_sources]]
-        tarball_hash = "sha256:96e460bf966623c28a1d8c7ad9b2ba4c0d5c4ce803c65b89a5f9f76a3a598e00"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.9-GCCBootstrap-x86_64-linux-gnu/Zlib-extract_log-v1.3.9-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:4703980ae9d10cbcbd80df395626744369e0124c54f6479ba0a5ec4ddaa61a89"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.10-GCCBootstrap-x86_64-linux-gnu/Zlib-extract_log-v1.3.10-x86_64-linux-gnu.tar.gz"
 
     [[builds.products]]
     deps = []
@@ -47,5 +47,5 @@ src_version = "1.3.1"
     treehash = "sha1:867861eef4edfd96cd1877e3c6eb39259204342a"
 
         [[builds.artifact.download_sources]]
-        tarball_hash = "sha256:fe7f57c739534cb7c6ed8eb5d9149a259f6b715d0e1de75716c0f4d29d0282ef"
-        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.9-GCCBootstrap-x86_64-linux-gnu/Zlib-v1.3.9-x86_64-linux-gnu.tar.gz"
+        tarball_hash = "sha256:ad01346336882131eafa0ff9be9fef06a6d8277fba8ab54a90090901e4d8d46e"
+        url = "https://github.com/staticfloat/Zlib_jll.jl/releases/download/v1.3.10-GCCBootstrap-x86_64-linux-gnu/Zlib-v1.3.10-x86_64-linux-gnu.tar.gz"
